@@ -94,7 +94,6 @@ public struct BottomSheet<Content: View>: View {
 public extension View {
 	func bottomSheet<Content: View>(
 		state: Binding<SheetState>,
-		allowsNavigation: Bool = true,
 		content: () -> Content
 	) -> some View {
 		ZStack {
@@ -127,7 +126,7 @@ struct BottomSheet_Previews: PreviewProvider {
 					}
 				)
 				.ignoresSafeArea()
-				.bottomSheet(state: $state, allowsNavigation: true) {
+				.bottomSheet(state: $state) {
 					content
 						.navigationBarItems(trailing: Button {
 							withAnimation {

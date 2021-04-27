@@ -19,7 +19,7 @@ public enum SheetState: Identifiable, Hashable {
 	}
 	
 	/// These values are meant to replicate the Apple Maps bottom sheet states.
-	public var maxHeight: CGFloat {
+	internal var maxHeight: CGFloat {
 		switch self {
 		case .closed:
 			return 0
