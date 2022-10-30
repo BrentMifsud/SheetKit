@@ -4,6 +4,10 @@ A simple to use bottom sheet view that mimicks the behavior of the Apple Maps bo
 
 ![demo](./Readme%20Images/SheetKit%20Demo.gif)
 
+## ARCHIVED
+
+As of iOS 16.0 this functionality is built into iOS. This repository is now archived.
+
 ## Usage
 Usage of SheetKit is quite simple. Simply apply the `.bottomSheet(sheetState:content:)` view modifier to your view.
 
